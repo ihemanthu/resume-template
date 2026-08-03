@@ -1,6 +1,6 @@
 // Import variables and functions
-#import "variables.typ": doc, college, skills, details, experiences
-#import "functions.typ": header, section, experience, academic
+#import "variables.typ": doc, college, skills, details, experiences, projects, summary
+#import "functions.typ": header, section, experience, academic, project
 
 // Document settings
 #set document(
@@ -16,8 +16,12 @@
 // The top-level heading of the resume
 #header(details.name, details.links)
 
+// The "summary" section
+#section[Summary]
+#summary
+
 // The "skills" section
-#section[Skills]
+#section[Technical Skills]
 #for (key, value) in skills {
   [*#key*: #value #linebreak()]
 }
@@ -35,6 +39,14 @@
   )
 }
 
+// The Project Section
+#section[Projects]
+#for proj in projects {
+  project(
+    proj.title,
+    proj.description,
+  )
+}
 // The "education" section
 #section[Education]
 #academic(

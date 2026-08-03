@@ -26,7 +26,7 @@
 // Function definition to render the roles
 #let role(name, company, location, start, end) = {
   grid(columns: (auto, 1fr), [#text(strong(name), size: 12pt), #company -- #location], grid.cell(
-      align(right, [#start\-#end]),
+      align(right, [#start \- #end]),
     ))
 }
 
@@ -45,7 +45,18 @@
   }
 }
 
+#let project(title, description) = {
+  grid(columns: (auto, 1fr), [#text(strong(title), size: 12pt)])
+  for pointer in description {
+    [- #pointer #linebreak()]
+  }
+}
+
 // Function to render the academic entries
 #let academic(name, degree, subject, start, end) = {
   grid(columns: (auto, 1fr), [*#name* - #degree in #subject], grid.cell(align(right, [#start\-#end])))
+}
+
+#let summary(summary) = {
+  [#summary]
 }

@@ -1,4 +1,4 @@
-# Jarmos's Resume Template
+# Hemanth's Resume Template
 
 This template repository contains the [Typst](https://typst.app) source code
 used to build [my resume](https://github.com/Jarmos-san/resume). I prefer using
