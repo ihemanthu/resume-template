@@ -28,9 +28,9 @@
 #let details = (
   name: "Hemanth U",
   links: (
-    (type: "location", url:"Bangalore, India", display: "Bangalore, India"),
+    (type: "location", display: "Bangalore, India"),
+    (type: "mobile", display: " +91 6360774166"),
     (type: "email", url: "hemanth.u@icloud.com", display: "hemanth.u@icloud.com"),
-    (type: "mobile", url: "+91 6360774166", display: " +91 6360774166"),
     (url: "https://linkedin.com/in/hemanth-u-sde", display: "linkedin.com/in/hemanth-u-sde"),
     (url: "https://github.com/ihemanthu", display: "github.com/ihemanthu"),
   ),

@@ -11,6 +11,10 @@
             .map(contact => {
               if contact.at("type", default: none) == "email" {
                 link("mailto:" + contact.url)[#contact.display]
+              } else if contact.at("type", default: none) == "location" {
+                [#contact.display]
+              } else if contact.at("type", default: none) == "mobile" {
+                [#contact.display]
               } else {
                 link(contact.url)[#contact.display]
               }
