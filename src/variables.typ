@@ -1,6 +1,6 @@
 // Document metadata
 #let doc = (
-  author: "Chandana",
+  author: "Hemanth",
   title: "Hemanth's Resume",
   description: "Hemanth's Software Development Engineering (SDE) resume written and built using Typst.",
   keywords: ("resume", "engineering", "typst"),
