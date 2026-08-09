@@ -9,6 +9,7 @@
   description: [#doc.description],
   keywords: doc.keywords,
 )
+
 #set page(margin: 1.25cm)
 #show link: underline
 #set text(font: "Liberation Serif")
